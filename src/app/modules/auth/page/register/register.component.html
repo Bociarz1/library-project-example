@@ -1,0 +1,20 @@
+<p>register works!</p>
+<p-card header="Register" class="flex justify-content-center">
+  <div class="p-float-label p-input-icon-left field grid">
+    <i class="pi pi-user" style="font-size: 16px"></i>
+    <input id="float-input" type="text" pInputText> 
+    <label for="float-input">Username</label>
+  </div>
+  <div class="p-float-label p-input-icon-left field grid">
+  <i class="pi pi-lock" style="font-size: 16px"></i>
+  <input id="float-input" type="password" pPassword > 
+  <label for="float-input">Password</label>
+  </div>
+  <div class="p-float-label p-input-icon-left field grid">
+    <i class="pi pi-lock" style="font-size: 16px"></i>
+    <input id="float-input" type="password" pInputText> 
+    <label for="float-input">Repeat Password</label>
+    </div>
+  <button pButton type="button" label="Register" class="field grid"></button>
+  <a [routerLink]="['/login']" style="text-decoration: none;" class="field grid"><p-chip label="Click to login" icon="pi pi-user-plus"></p-chip></a>
+</p-card>
