@@ -8,6 +8,7 @@ import {CardModule} from 'primeng/card';
 import {InputTextModule} from 'primeng/inputtext';
 import {PasswordModule} from 'primeng/password';
 import { ChipModule } from 'primeng/chip';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ChipModule } from 'primeng/chip';
     CardModule,
     InputTextModule,
     PasswordModule,
-    ChipModule
+    ChipModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

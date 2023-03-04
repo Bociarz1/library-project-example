@@ -3,15 +3,15 @@
   <p-card header="Login" class="flex justify-content-center">
       <div class="p-float-label p-input-icon-left field grid">
         <i class="pi pi-user" style="font-size: 16px"></i>
-        <input id="float-input" type="text" pInputText> 
-        <label for="float-input">Username</label>
+        <input id="float-input" type="text" pInputText [(ngModel)]="username"> 
+        <label for="float-input" >Username</label>
       </div>
       <div class="p-float-label p-input-icon-left field grid">
       <i class="pi pi-lock" style="font-size: 16px"></i>
-      <input id="float-input" type="password" pInputText> 
+      <input id="float-input" type="password" pInputText [(ngModel)]="password"> 
       <label for="float-input">Password</label>
       </div>
-      <button pButton type="button" label="Log In" class="field grid"></button>
+      <button pButton type="button" label="Log In" class="field grid" (click)="LogIn()"></button>
       <a [routerLink]="['/register']" style="text-decoration: none;" class="field grid"><p-chip label="Click to register" icon="pi pi-user-plus"></p-chip></a>
 </p-card>
 
